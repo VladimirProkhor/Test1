@@ -30,11 +30,12 @@ public class SolutionRun {
 // implements Runnable say that the threat will be executed in parallel
 class NewFrontEnd implements Runnable {
 
+
     @Override
     public void run() {
         Thread thread = Thread.currentThread();
         String threadName = Thread.currentThread().getName();
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < 1000; i++) {
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
