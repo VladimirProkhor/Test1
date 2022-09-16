@@ -35,7 +35,7 @@ class NewFrontEnd implements Runnable {
     public void run() {
         Thread thread = Thread.currentThread();
         String threadName = Thread.currentThread().getName();
-        for (int i = 0; i < 1000; i++) {
+        for (int i = 0; i < 10000; i++) {
             try {
                 Thread.sleep(200);
             } catch (InterruptedException e) {
